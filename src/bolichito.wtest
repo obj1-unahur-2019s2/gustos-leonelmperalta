@@ -1,0 +1,18 @@
+import bolichito.*
+import objetos.*
+import personas.*
+
+test "test bolichito" {
+	
+	bolichito.ponerEnMostrador(pelota)
+	bolichito.ponerEnVidriera(placa)
+	bolichito.ponerEnMostrador(remera)
+	placa.color(rojo)
+	placa.peso(2400)
+	assert.equals(true, bolichito.esMonocromatico())
+	assert.equals(false, bolichito.estaDesequilibrado())
+	assert.equals(false, bolichito.tieneAlgoDeColor(verde))
+	assert.equals(true, bolichito.puedeOfrecerleAlgoA(estefania))
+	assert.equals(true, bolichito.puedeOfrecerleAlgoA(juan))
+	
+}
